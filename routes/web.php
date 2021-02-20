@@ -11,6 +11,14 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::get('/', [App\Http\Controllers\bible::class, 'index']);
+
+/*
+Route::get('/{book}/{start}/{end}', function () {
+    return view('show');
+});
+*/
+
+Route::get('/login', function () {
+    return 'NO_1!';
 });
