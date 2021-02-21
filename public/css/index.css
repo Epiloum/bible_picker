@@ -1,37 +1,97 @@
 body {
     margin: 0;
     padding: 0;
-    background-repeat: repeat-y;
-    background-size: 100% auto;
+    background-image: url("/images/bg.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 200% auto;
+    background-color: #271410;
+    font-size: 0;
 }
 
 hgroup {
-    margin: 0;
+    width: 320px;
+    margin: 40px auto 0 auto;
     padding: 0;
     min-height: 180px;
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0.6);
     font-family: sans-serif;
     text-align: center;
 }
 
 h1 {
     margin: 0;
-    padding: 24px 0;
-    color: #333;
-    font-size: 48px;
+    padding: 32px 0 16px 0;
+    color: #eee;
+    font-size: 32px;
     font-weight: bold;
 }
 
 h2 {
     margin: 0;
     padding: 0;
-    color: #888;
+    color: #ccc;
+    font-size: 16px;
     font-weight: normal;
 }
 
-select {
-    padding: 3px;
-    border: 1px solid #ccc;
-    border-radius: 0;
-    background-color: #fff;
+form
+{
+    width: 320px;
+    margin: auto;
+    padding: 0;
+    min-height: 180px;
+    background-color: rgba(0, 0, 0, 0.6);
+    text-align: center;
+}
+
+form div
+{
+    margin-bottom: 8px;
+}
+
+form span {
+    color: #ccc;
+    font-family: sans-serif;
+    font-size: 12px;
+}
+
+form span:first-of-type {
+    margin-right: 8px;
+}
+
+form select {
+    height: 30px;
+    padding: 2px 6px;
+    border: 1px solid #333;
+    border-radius: 2px;
+    background-image: url("/images/select_arrow.png");
+    background-repeat: no-repeat;
+    background-size: 8px 8px;
+    background-position: right 5px center;
+    background-color: #eee;
+    color: #333;
+    font-size: 14px;
+    -webkit-appearance: none;
+}
+
+form select#testaments {
+    width: 60px;
+    margin-right: 4px;
+}
+
+form select[name="books"] {
+    width: 100px;
+}
+
+form input[type="submit"] {
+    margin-top: 24px;
+    padding: 10px 20px;
+    border: 0;
+    border-radius: 2px;
+    background-color: #2a9055;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    -webkit-appearance: none;
 }

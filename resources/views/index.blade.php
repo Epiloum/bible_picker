@@ -23,17 +23,17 @@
         <div>
             <select name="start_chapters">
             </select>
-
             <select name="start_paragraphs">
             </select>
-        </div>
+            <span>부터</span>
 
-        <div>
             <select name="end_chapters">
             </select>
-
             <select name="end_paragraphs">
             </select>
+            <span>까지</span>
         </div>
+
+        <input type="submit" value="말씀보기" />
     </form>
 @endsection
